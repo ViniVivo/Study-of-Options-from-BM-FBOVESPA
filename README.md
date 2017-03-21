@@ -1,6 +1,6 @@
 # Study-of-Options-from-BM-FBOVESPA
 
-##This study has the main goal to evaluate the implied volatility from market makers of BM&FBOVESPA
+## This study has the main goal to evaluate the implied volatility from market makers of BM&FBOVESPA
 
 You should download files from:
 - ftp://ftp.bmf.com.br/MarketData/
