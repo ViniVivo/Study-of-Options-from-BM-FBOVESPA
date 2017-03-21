@@ -1,0 +1,40 @@
+# Codebook from:
+
+## ftp://ftp.bmf.com.br/MarketData/
+
+- OFER_CPA
+
+Layout of OFER_CPA file (Buy Orders)
+
+Header/Trailer
+-------------------------------------------------------------
+Column                Initial Position   Lenght   Description
+-------------------------------------------------------------
+Identification                       1        2   RH Header - RT Trailer
+Name of file                         4       20   Name of file
+Initial date                        25       10   Initial date of file
+End date                            36       10   End date of file
+Total of lines                      47        9   Contain the total of lines when the file Trailer record
+
+Details
+-------------------------------------------------------------
+Column                Initial Position   Lenght   Description
+-------------------------------------------------------------
+Session Date                         1       10   Session date
+Instrument Symbol                   12       50   Instrument identifier
+Order Side			    63        1   "1" Buy Order /  "2" Sell Order
+Sequential Order Number             65       15   Sequential order number
+Secondary Order ID                  81       15   Secondary Order ID
+Execution Type                      97        3	  Valid values: 1 - New / 2 - Update / 3 - Cancel / 4 - Trade / 5 - Reentry / 6 - New Stop Price / 7 - Rejected / 8 - Removed / 9 - Stop Price Triggered / 11 - Expired / 12 - Eliminated 
+Priority Time                      101       15   Order time entry in system (format HH:MM:SS.NNN), used as priority indicator
+Priority Indicator                 117       10   Priority indicator
+Order Price                        128       20   Order price
+Total Quantity of Order            149       18   Total quantity of order
+Traded Quantity of Order           168       18   Traded quantity of order
+Order Date                         187       10   Order date
+Order Datetime entry               198       19   Order datetime entry (format AAAA-MM-DD HH:MM:SS)
+Order Status                       218        1   Order status: 0 - New / 1 - Partially Filled / 2 - Filled / 4 - Canceled / 5 - Replaced / 8 - Rejected / C - Expired
+Aggressor Indicator                220        1   0 - Neutral (Order was not executed) / 1 - Aggressor / 2 - Passive
+Member                             222        8   Entering Firm - Available from March/2014
+
+Obs: Delimiter of details columns ';' (semilocon)
