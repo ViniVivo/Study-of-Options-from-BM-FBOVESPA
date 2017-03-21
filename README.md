@@ -1,4 +1,4 @@
-# Study-of-Options-from-BM-FBOVESPA
+# Study-of-Options-from-BMFBOVESPA
 
 ## This study has the main goal to evaluate the implied volatility from BM&FBOVESPA's market makers
 
