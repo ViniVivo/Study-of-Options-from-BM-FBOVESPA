@@ -2,7 +2,8 @@
 
 ## ftp://ftp.bmf.com.br/MarketData/
 
-- NEG
+- NEG_OPC
+
 Layout of NEG file (Trades)
 
 Header/Trailer
